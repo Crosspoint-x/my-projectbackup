@@ -1,0 +1,87 @@
+body {
+  font-family: "Ubuntu";
+  background-color: #f0f0f5;
+}
+
+.leaderboard-container {
+  background-color: #fff; /* White background for the leaderboard container */
+  padding: 25px; /* Consistent padding */
+  /* border-radius: 12px; Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  max-width: 600px; /* Adjusted max width */
+  margin: 40px auto; /* Center the container */
+  text-align: center; /* Center the text */
+}
+
+.leaderboard {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  /* border-radius: 25px; */
+}
+
+.leaderboard-title {
+  font-size: 2rem; /* Title font size */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.table {
+  width: 100%; /* Full width */
+  /*border-collapse: collapse;  Remove spaces between cells */
+  margin-top: 20px; /* Space above the table */
+  /* border-radius: 16px; */
+  border-spacing: 0px;
+  overflow: hidden;
+  border-color: #ddd;
+  border-width: 1px;
+  margin-bottom: 10px;
+}
+
+.table th,
+.table td {
+  padding: 12px; /* Consistent padding for table cells */
+  border: 1px solid #ddd; /* Light border for table cells */
+  border-collapse: collapse;
+}
+
+thead {
+  border-spacing: 0px;
+  border-color: #2870a7;
+}
+
+thead tr {
+  border-color: #2870a7;
+}
+
+.table th {
+  background-color: #2870a7; /* Header background color */
+  color: white; /* Header text color */
+  overflow: hidden;
+  border-spacing: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light background for even rows */
+  border-collapse: collapse;
+}
+
+.table tr:last-child {
+  /* border-radius: 16px; */
+  border: 5px solid #ddd;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1; /* Hover effect for rows */
+}
+
+.table td {
+  font-size: 1.25rem; /* Increased font size for table cells */
+  overflow: hidden;
+}
+
+.error-message {
+  color: red; /* Error message color */
+  margin-top: 10px; /* Space above error message */
+}

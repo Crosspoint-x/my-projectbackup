@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "players": {
+      ".read": "true",
+      ".write": "false"
+    },
+    "users": {
+      ".read": "true",
+      ".write": "false"
+    },
+    "user": {
+      ".read": "true",
+      ".write": "false"
+    }
+  }
+}

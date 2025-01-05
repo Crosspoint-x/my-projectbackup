@@ -1,0 +1,237 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  margin: 40px auto;
+  font-family: "Roboto";
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+.Logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 30px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.LoginTitle {
+  font-size: 28px;
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+  color: #333;
+  animation: fadeIn 0.9s ease-in-out;
+}
+
+.LoginToggleContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.LoginToggleButton {
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #afacac;
+  cursor: pointer;
+  font-size: 16px;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.active-toggle {
+  background-color: #2870a7;
+  color: white;
+}
+
+.LoginInput {
+  width: calc(100% - 24px);
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.LoginInput:focus {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.Loading {
+  font-size: 18px;
+  margin-bottom: 15px;
+  animation: fadeIn 1.3s ease-in-out;
+}
+
+.button {
+  background-color: #2870a7;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  width: calc(100% - 24px);
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+.button:hover {
+  background-color: #7ea9ca;
+  animation: buttonHover 0.6s ease-in-out infinite;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.SignupLink {
+  margin-top: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.LinkText {
+  color: #2870a7;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.LinkText:hover {
+  color: #a75f28;
+  text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes buttonHover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.socials {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-end;
+  transition: color 0.3s;
+}
+
+.social-icon {
+  font-size: 16px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #2870a7;
+}
+
+.social-icon span {
+  font-size: 14px;
+  color: gray;
+}
+
+.social-icon span:hover {
+  color: #2870a7;
+}
+
+.AboutUsToggleButton {
+  margin-top: 20px;
+  color: gray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.AboutUsToggleButton:hover {
+  color: lightgray;
+}
+
+/* AboutUsBox styling */
+.AboutUsBox {
+  width: 10px; /* Same width as LoginContainer */
+  height: 10px; /* Match height of LoginContainer */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(100%); /* Start to the right of the login box */
+  position: absolute; /* Absolute positioning to pop out */
+  top: 0;
+  right: 0;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.AboutUsBox h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.AboutUsBox p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Show animation */
+.AboutUsBox.show {
+  opacity: 1;
+  transform: translateX(0); /* Slide into view from the right */
+}
+
+/* Hide animation */
+.AboutUsBox.hide {
+  opacity: 0;
+  transform: translateX(100%); /* Slide out to the right */
+}

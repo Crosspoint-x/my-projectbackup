@@ -1,0 +1,34 @@
+.qr-scanner-container {
+  text-align: center;
+}
+
+.team-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.status-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.status,
+.game-id {
+  border: 1px solid gray;
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+}
+
+.player-list {
+  margin-top: 20px;
+}
+
+.player {
+  margin-top: 5px;
+}

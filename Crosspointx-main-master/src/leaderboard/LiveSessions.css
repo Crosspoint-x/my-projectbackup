@@ -1,0 +1,112 @@
+/* LiveSessions.css */
+
+.live-sessions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-box {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 300px;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.location-box:hover {
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 1);
+}
+
+.location-box {
+  cursor: pointer;
+}
+
+.logo-container img {
+  width: 80px; /* Adjust logo size */
+  height: auto;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.verification-box {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  /* font-weight: bold; */
+  margin-top: 5px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.verification-box .checkmark {
+  margin-right: 5px;
+}
+
+.unverified {
+  color: #777;
+  border-color: #777;
+}
+
+.unverified:hover {
+  background-color: #777;
+  color: #fff;
+  border-color: #777;
+}
+
+.verified {
+  color: #d4af37; /* Gold color for verified */
+  border-color: #d4af37;
+}
+
+.verified:hover {
+  background-color: #d4af37;
+  color: #fff; /* Gold color for verified */
+  border-color: #d4af37;
+}
+
+/* Add shine effect on hover */
+.verification-box:hover::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.verification-box:hover::before {
+  animation: shine 0.8s ease-in-out forwards;
+}
+
+/* Keyframe for the shine effect */
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.game-stats {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}

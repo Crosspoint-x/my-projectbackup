@@ -1,0 +1,153 @@
+/* SignUp.css */
+.sign-up-form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Reduce max-width to prevent inputs from spilling over */
+  margin: 40px auto;
+  font-family: "Roboto";
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+input {
+  width: calc(100% - 24px); /* Ensure inputs stay within form bounds */
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 0 auto; /* Center the inputs */
+  box-sizing: border-box; /* Include padding in the element's width */
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.sign-up-form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  background-color: #2870a7;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  width: 100%;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+button:hover {
+  background-color: #7ea9ca;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cost-breakdown {
+  background-color: #f9f9f9;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+/* Parent container that holds the form and logo */
+
+/* Logo styling to */
+.logo {
+  align-self: center;
+}
+
+/* styles.css */
+.card-element-container {
+  border: 1px solid #e1e1e1;
+  border-radius: 25px;
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 20px auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-element-container:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-element {
+  transition: all 0.3s ease;
+}
+
+.card-element:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.back-button-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.back-button {
+  color: #000; /* Adjust the color if needed */
+}
